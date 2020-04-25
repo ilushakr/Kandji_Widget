@@ -1,0 +1,2 @@
+rootProject.name='Kandji_Widget'
+include ':app'
