@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:background="@drawable/new_svitok"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@drawable/new_svitok"
+        android:focusable="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/kandji"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:textColor="@color/ColorBlack"
+                android:text="鈍"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="romaji"
+                    android:gravity="center_horizontal"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:id="@+id/romaji"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="romaji"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="kun:"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/hiragana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hiragana"
+                android:layout_weight="30"
+                android:gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="meaning:"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/meaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="meaning"
+                android:layout_weight="64"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nextButton"
+        android:layout_width="83.3dp"
+        android:layout_height="match_parent"
+        android:text="lvl"
+        android:gravity="right"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/copyBotton"
+        android:layout_width="82dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/previousButton"
+        android:layout_width="83.3dp"
+        android:layout_height="match_parent"
+        android:text="count"/>
+
+
+</RelativeLayout>
