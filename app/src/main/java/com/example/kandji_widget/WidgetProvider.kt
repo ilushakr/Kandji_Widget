@@ -95,8 +95,8 @@ class WidgetProvider : AppWidgetProvider() {
             val widgetView = RemoteViews(ctx.packageName, R.layout.widget)
 
             widgetView.setTextViewText(R.id.kandji, getList(str!!, ctx)[count].kandji)
-            widgetView.setTextViewText(R.id.hiragana, getList(str!!, ctx)[count].meaning)
-            widgetView.setTextViewText(R.id.romaji, getList(str!!, ctx)[count].romaji)
+            widgetView.setTextViewText(R.id.hiragana, getList(str!!, ctx)[count].romaji)
+            widgetView.setTextViewText(R.id.romaji, getList(str!!, ctx)[count].meaning)
             widgetView.setTextViewText(R.id.meaning, getList(str!!, ctx)[count].hiragana)
 
             widgetView.setTextViewText(R.id.previousButton, "${count + 1}/${getList(str!!, ctx).size}")
